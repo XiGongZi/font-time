@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+coverage
+*.log
+
+# ---- 数据相关（体积大，不入库，首次 dev 自动拉取）----
+# 原始字形仓库（约 230MB / 14 万个 SVG），由 scripts/setup-source.ts 下载或解压
+vendor/
+# 构建产出的全量字形数据（约 122MB / 14850 个分字文件），由 npm run data:build --all 生成
+data/
+# 下载缓存
+scripts/.cache/
+
+# 用户手动下载的仓库压缩包，可能放在项目根
+hanzi-glyphs-svg*.zip
